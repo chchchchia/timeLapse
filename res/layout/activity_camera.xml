@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight=".025"
+        android:alpha="1"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/btnFlip"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/camera_flip"
+            android:text="Button" />
+
+    </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_weight=".025"
+      android:alpha="1"
+      android:background="@color/black_overlay" >
+
+      <ImageButton
+          android:id="@+id/btnFPS"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/btnDuration"
+          android:layout_alignParentLeft="true"
+          android:src="@drawable/fps_icon"
+          android:text="FPS" />
+
+      <ImageButton
+          android:id="@+id/btnResolution"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/btnAW"
+          android:paddingTop="-5dp"
+          android:src="@drawable/res_icon"
+          android:text="Resolution" />
+
+      <ImageButton
+          android:id="@+id/button_capture"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:alpha="1"
+          android:scaleType="center"
+          android:src="@drawable/stopped"
+          android:text="Capture" />
+
+      <ImageButton
+          android:id="@+id/btnDuration"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:src="@drawable/duration"
+          android:text="Duration" />
+
+      <ImageButton
+          android:id="@+id/btnAW"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:src="@drawable/aw_shade" />
+
+  </RelativeLayout>
+ 
+</FrameLayout>
+

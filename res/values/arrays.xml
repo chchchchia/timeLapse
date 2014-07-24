@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="frameRate">
+        <item name="0">0.5</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+    </string-array>
+    <string-array name="frameRateValues">
+        <item name="0">0.5</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+    </string-array>
+	<string-array name="AW">
+	    <item name="0">Auto</item>
+	</string-array>
+
+</resources>

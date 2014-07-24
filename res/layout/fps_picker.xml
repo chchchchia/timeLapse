@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alpha="1"
+     >
+
+    <Button
+        android:id="@+id/btnFPSCancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFPSSet"
+        android:layout_toLeftOf="@+id/fpsNP"
+        android:text="Cancel" />
+
+    <NumberPicker
+        android:id="@+id/fpsNP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnFPSSet"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:layout_toRightOf="@+id/fpsNP"
+        android:text="Set" />
+
+</RelativeLayout>
